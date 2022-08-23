@@ -1,13 +1,12 @@
 // Code your solutions in this file
 const newArray = [];
-function writeCards(names, event) {
+function writeCards(names, eventName) {
   for (let i = 0; i < names.length; i++) {
-    let message = `Thank you, ${names[i]}, for the wonderful ${event} gift!`;
+    let message = `Thank you, ${names[i]}, for the wonderful ${eventName} gift!`;
     newArray.push(message);
   }
   return newArray;
 }
-writeCards(names, event);
 function countDown(number) {
   let i = number;
   while (i >= 0) {
@@ -15,4 +14,3 @@ function countDown(number) {
   }
   return i;
 }
-countDown();
